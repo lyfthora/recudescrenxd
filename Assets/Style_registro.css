@@ -1,0 +1,124 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: "inherit";
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*RESET*/
+html, * {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: #2C715F;
+  color: #fff;
+  display: flex;
+  font-family: Arial, sans-serif;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/*Ajustes generales*/
+.contenedor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.formulario {
+  padding: 30px;
+  border-radius: 8px;
+  width: 300px;
+}
+.subtitulo {
+  font-size: 16px;
+  text-align: center;
+  margin: 10px 0;
+  color: white;
+  font-weight: bold;
+}
+p {
+  font-size: 12px;
+  text-align: center;
+  margin: 10px 0;
+  color: white;
+}
+/*Ajustes concretos*/
+.registro {
+  padding: 50px;
+}
+.cuenta {
+  color: black;
+  font-size: 15px;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 10px;
+  border-color: black;
+}
+.formulario input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border-color: rgba(151, 151, 151, 1.00);
+}
+.entrar {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #B58413;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  align-content: center;
+}
+.formulario .divisor {
+  text-align: center;
+  margin: 10px 0;
+  color: #aaa;
+}
+a {
+  color: rgba(8, 243, 232, 1.00);
+  text-decoration: none;
+  font-size: 12px;
+}
+.boton1 img {
+  width: 120px;
+}
+.boton2 img {
+  width: 100px;
+}
+/*Colores
+
+gris:   #737373
+gris oscuro: rgba(46, 46, 46, 1.00)
+Blanco: #fff
+
+*/
