@@ -1,4 +1,6 @@
-/* Reset */
+/* =========================
+   RESET Y GLOBALES
+========================= */
 *,
 *::before,
 *::after {
@@ -12,13 +14,12 @@ html {
 }
 
 body {
-  font-family: "Neuton", serif;
+  font-family: "IBM Plex Mono", monospace;
   line-height: 1.6;
   color: #e0e0e0;
   background-color: #121212;
 }
 
-/* Estilos Globales */
 h1,
 h2,
 h3,
@@ -55,14 +56,8 @@ p {
 }
 
 a {
-  color: #ff9800;
+  color: white;
   text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-a:hover,
-a:focus {
-  color: #ffc107;
 }
 
 img {
@@ -71,15 +66,7 @@ img {
   display: block;
 }
 
-/* Layout */
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-/* Header */
+/* header y listas */
 header {
   background-color: #1a1a1a;
   display: flex;
@@ -88,12 +75,6 @@ header {
   padding: 1rem 2rem;
   z-index: 1000;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-}
-
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .logo img {
@@ -151,8 +132,8 @@ header {
   width: 100%;
 }
 
-/* Hero Section */
-.hero {
+/* video */
+.video {
   position: relative;
   overflow: hidden;
   height: 80vh;
@@ -174,7 +155,7 @@ header {
   pointer-events: none;
 }
 
-.hero-content {
+.video-content {
   animation: hideText 8s forwards;
   position: relative;
   z-index: 1;
@@ -199,33 +180,47 @@ header {
   }
 }
 
-.hero h1 {
+.video h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
   animation: fadeInDown 1s ease;
 }
 
-.hero p {
+.video p {
   font-size: 1.5rem;
   max-width: 800px;
   margin-bottom: 2rem;
   animation: fadeInUp 1s ease;
 }
 
-/* Video Section */
-.title-main {
+/* introduccion */
+.section-intro {
+  background-color: #000000;
   padding: 4rem 0;
   text-align: center;
 }
 
-video {
-  width: 100%;
+.title-main {
+  color: #ffffff;
+  margin-bottom: 1rem;
+  font-family: "IBM Plex Mono", monospace;
+  text-align: center;
+}
+
+.intro-text {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  color: #ffffff;
+  padding: 1rem;
+  background-color: rgba(30, 30, 30, 0.8);
   border-radius: 8px;
 }
 
-/* Cards Section */
+/* secciones(aldea,mons,armas)*/
 .info-section {
-  padding: 4rem 0;
+  background-color: #000000;
+  padding: 2rem 5rem 1rem 5rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
@@ -233,6 +228,10 @@ video {
 
 .card {
   background-color: #1e1e1e;
+  max-width: 900px;
+  text-align: center;
+  padding-bottom: 25px;
+  padding-top: 20px;
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -246,36 +245,80 @@ video {
 .card img {
   width: 100%;
   height: 200px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
-.card-content {
-  padding: 1.5rem;
-}
-
-/* Iframes */
-.iframe-container {
-  position: relative;
-  overflow: hidden;
-  padding-top: 56.25%;
-  margin: 2rem 0;
-  border-radius: 8px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-.iframe-container iframe {
-  position: absolute;
+/* modal aldea,arma,monstruos*/
+.modal-aldea {
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  border: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1001;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: none;
+  pointer-events: none;
 }
 
-/* Formulario */
+.modal-aldea:target {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.modal-contenido {
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 800px;
+  width: 90%;
+  position: relative;
+  border: 2px solid #ff9800;
+}
+
+.modal-cerrar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #d4af37;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.modal-imagen {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.modal-navegacion {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.modal-btn {
+  background-color: #d4af37;
+  color: #1a1a1a;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+/*formulario */
 .form-section {
   padding: 4rem 0;
-  background-color: #1a1a1a;
+  background-color: #000000;
 }
 
 .registro-form {
@@ -336,17 +379,18 @@ video {
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.btn:hover {
+/* .btn:hover {
   background-color: #ffab00;
   transform: translateY(-2px);
-}
+} */
 
 .btn:active {
   transform: translateY(0);
 }
 
-/* Listas */
+/*consejos*/
 .lista-section {
+  background-color: #000000;
   padding: 4rem 0;
 }
 
@@ -368,9 +412,9 @@ video {
   transform: translateX(10px);
 }
 
-/* Footer */
+/*footer*/
 footer {
-  background-color: #1a1a1a;
+  background-color: #1e1e1e;
   padding: 3rem 0 1.5rem;
   text-align: center;
 }
@@ -412,15 +456,7 @@ footer {
   font-size: 0.8rem;
 }
 
-/* Animaciones */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
+/* animacion para el text del vid*/
 
 @keyframes fadeInDown {
   from {
@@ -444,34 +480,8 @@ footer {
   }
 }
 
-/* Transiciones y Transformaciones (Desktop) */
-@media (min-width: 769px) {
-  .card {
-    transform: perspective(1000px) rotateY(0deg);
-    transition: transform 0.5s ease, box-shadow 0.3s ease;
-  }
-
-  .card:hover {
-    transform: perspective(1000px) rotateY(10deg);
-  }
-
-  .btn {
-    transform: scale(1);
-    transition: transform 0.3s ease, background-color 0.3s ease;
-  }
-
-  .btn:hover {
-    transform: scale(1.05);
-  }
-}
-
-/* Media Queries */
+/* media queries */
 @media (max-width: 768px) {
-  .header-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
   .menu-toggle {
     display: block;
     position: absolute;
@@ -536,7 +546,6 @@ footer {
   }
 
   .form-section,
-  .video-section,
   .lista-section {
     padding: 2rem 1rem;
   }
@@ -550,7 +559,6 @@ footer {
     gap: 0.5rem;
   }
 
-  /* Desactivar hover effects para móviles */
   .card:hover {
     transform: none;
     box-shadow: none;
@@ -565,7 +573,6 @@ footer {
     color: white;
   }
 
-  /* Usar :active en lugar de :hover para móviles */
   .card:active {
     transform: translateY(-5px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
@@ -581,7 +588,6 @@ footer {
   }
 }
 
-/* Optimización para pantallas táctiles */
 @media (hover: none) {
   .btn:hover {
     background-color: #ff9800;
