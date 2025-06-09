@@ -18,6 +18,7 @@
     ></script>
   </head>
   <body>
+    <!--   header -->
     <header>
       <div class="logo">
         <img src="assets/img/logo.png" alt="Monster Hunter Wiki" width="150" />
@@ -37,21 +38,31 @@
     </header>
 
     <main>
-      <section class="hero">
+      <!-- video -->
+      <section class="video">
         <video id="bgVideo" autoplay loop muted playsinline class="bg-video">
           <source src="assets/media/Video.mp4" type="video/mp4" />
           Tu navegador no soporta videos HTML5.
         </video>
-        <div class="hero-content" id="heroContent">
+        <div class="video-content">
           <h1>Monster Hunter Wiki</h1>
           <p>La enciclopedia definitiva del universo Monster Hunter</p>
         </div>
       </section>
 
-      <section id="explorar" class="title-main">
-        <h2>Introducción al Mundo</h2>
+      <!-- intro -->
+      <section class="section-intro">
+        <h2 id="#MHWiki" class="title-main">Introducción al Mundo</h2>
+        <p class="intro-text">
+          Bienvenido a la Monster Hunter Wiki, tu fuente de información sobre el
+          vasto y emocionante mundo de Monster Hunter. Aquí encontrarás todo lo
+          que necesitas saber sobre aldeas, monstruos, armas y mucho más. Desde
+          las aldeas más icónicas hasta los monstruos más temibles, te guiaremos
+          a través de este universo lleno de aventuras y desafíos.
+        </p>
       </section>
 
+      <!-- secciones(aldea,mons,armas) -->
       <section class="info-section">
         <article class="card">
           <h3>Aldeas</h3>
@@ -64,33 +75,33 @@
             Descubre las diferentes aldeas y ciudades que pueblan el mundo de
             Monster Hunter.
           </p>
-          <a href="lugares.html" class="btn">Ver más</a>
+          <a href="#moga" class="btn">Ver más</a>
         </article>
 
         <article class="card">
           <h3>Monstruos</h3>
           <img
-            src="assets/img/monstruo.jpg"
+            src="assets/img/valtrasx.png"
             alt="Rathalos de Monster Hunter"
             loading="lazy"
           />
           <p>
             Conoce a las criaturas que habitan este mundo y aprende a cazarlas.
           </p>
-          <a href="monstruos.html" class="btn">Ver más</a>
+          <a href="#monstruos1" class="btn">Ver más</a>
         </article>
 
         <article class="card">
           <h3>Armas</h3>
           <img
-            src="assets/img/arma.jpg"
+            src="assets/img/intro.jpg"
             alt="Espada grande de Monster Hunter"
             loading="lazy"
           />
           <p>
             Domina las 14 armas diferentes y encuentra tu estilo de combate.
           </p>
-          <a href="armas.html" class="btn">Ver más</a>
+          <a href="#armas1" class="btn">Ver más</a>
         </article>
       </section>
 
@@ -117,8 +128,23 @@
         </div>
       </section> -->
 
+      <!-- tips-->
+      <section class="lista-section">
+        <h2 class="title-main">Consejos para Principiantes</h2>
+        <ul class="consejos-lista">
+          <li>Prueba diferentes armas antes de decidirte por una</li>
+          <li>Observa los patrones de ataque de los monstruos</li>
+          <li>
+            No subestimes la importancia de prepararte antes de una cacería
+          </li>
+          <li>Recolecta recursos siempre que puedas</li>
+          <li>Juega en equipo para cazas más difíciles</li>
+        </ul>
+      </section>
+
+      <!-- form -->
       <section class="form-section">
-        <h2>Únete a la Comunidad</h2>
+        <h2 class="title-main">Únete a la Comunidad</h2>
         <form id="registro-form" class="registro-form">
           <div class="form-group">
             <label for="nombre">Nombre:</label>
@@ -170,21 +196,125 @@
           <button type="submit" class="btn">Registrarse</button>
         </form>
       </section>
-
-      <section class="lista-section">
-        <h2>Consejos para Principiantes</h2>
-        <ul class="consejos-lista">
-          <li>Prueba diferentes armas antes de decidirte por una</li>
-          <li>Observa los patrones de ataque de los monstruos</li>
-          <li>
-            No subestimes la importancia de prepararte antes de una cacería
-          </li>
-          <li>Recolecta recursos siempre que puedas</li>
-          <li>Juega en equipo para cazas más difíciles</li>
-        </ul>
-      </section>
     </main>
 
+    <!-- modal aldea -->
+    <div id="moga" class="modal-aldea">
+      <div class="modal-contenido">
+        <a href="#MHWiki" class="modal-cerrar">&times;</a>
+        <h2>Aldea de Moga</h2>
+        <img
+          src="assets/img/Aldea_Moga.jpg"
+          alt="Aldea de Moga"
+          class="modal-imagen"
+        />
+        <p>
+          La Aldea de Moga es un pequeño asentamiento pesquero ubicado en una
+          isla tropical. Es el hogar del cazador en Monster Hunter 3 Ultimate.
+          La aldea es conocida por su ambiente relajado y sus habitantes
+          amigables, pero recientemente ha sido amenazada por el Leviatán
+          Ceadeus, que causa maremotos que afectan a la aldea.
+        </p>
+        <div class="modal-navegacion">
+          <a href="#pokke" class="modal-btn">Siguiente &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="pokke" class="modal-aldea">
+      <div class="modal-contenido">
+        <a href="#MHWiki" class="modal-cerrar">&times;</a>
+        <h2>Aldea de Pokke</h2>
+        <img
+          src="assets/img/Aldea_Pokke.jpg"
+          alt="Aldea de Pokke"
+          class="modal-imagen"
+        />
+        <p>
+          La Aldea de Pokke es un pueblo montañoso situado en una región fría,
+          apareciendo por primera vez en Monster Hunter Freedom 2. Es conocida
+          por su Gremio local y su taller de herrería. La aldea tiene una
+          atmósfera cálida y acogedora a pesar del clima frío, y es el punto de
+          partida para explorar la Montaña Nevada.
+        </p>
+        <div class="modal-navegacion">
+          <a href="#moga" class="modal-btn">&larr; Anterior</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal mons -->
+    <div id="monstruos1" class="modal-aldea">
+      <div class="modal-contenido">
+        <a href="#MHWiki" class="modal-cerrar">&times;</a>
+        <h2>Zohshia</h2>
+        <img src="assets/img/zohshia.png" alt="Zohshia" class="modal-imagen" />
+        <p>
+          Zohshia es un monstruo legendario conocido por su ferocidad y tamaño
+          imponente. Solo los cazadores más experimentados se atreven a
+          enfrentarlo.
+        </p>
+        <div class="modal-navegacion">
+          <a href="#monstruos2" class="modal-btn">Siguiente &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="monstruos2" class="modal-aldea">
+      <div class="modal-contenido">
+        <a href="#MHWiki" class="modal-cerrar">&times;</a>
+        <h2>Fatalis</h2>
+        <img src="assets/img/fatalis.png" alt="Fatalis" class="modal-imagen" />
+        <p>
+          Fatalis es uno de los dragones ancianos más temidos del universo
+          Monster Hunter. Su poder y destrucción son legendarios.
+        </p>
+        <div class="modal-navegacion">
+          <a href="#monstruos1" class="modal-btn">&larr; Anterior</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal armas -->
+    <div id="armas1" class="modal-aldea">
+      <div class="modal-contenido">
+        <a href="#MHWiki" class="modal-cerrar">&times;</a>
+        <h2>Dual Blades</h2>
+        <img
+          src="assets/img/dualblades.png"
+          alt="Dual Blades"
+          class="modal-imagen"
+        />
+        <p>
+          Las Dual Blades son armas rápidas y ágiles, ideales para cazadores que
+          prefieren la velocidad y los combos continuos.
+        </p>
+        <div class="modal-navegacion">
+          <a href="#armas2" class="modal-btn">Siguiente &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="armas2" class="modal-aldea">
+      <div class="modal-contenido">
+        <a href="#MHWiki" class="modal-cerrar">&times;</a>
+        <h2>Great Sword</h2>
+        <img
+          src="assets/img/greatsword.png"
+          alt="Great Sword"
+          class="modal-imagen"
+        />
+        <p>
+          La Great Sword es un arma poderosa que inflige gran daño con cada
+          golpe. Requiere precisión y paciencia para dominarla.
+        </p>
+        <div class="modal-navegacion">
+          <a href="#armas1" class="modal-btn">&larr; Anterior</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
     <footer>
       <div class="social-links">
         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -200,7 +330,7 @@
       </div>
 
       <p class="copyright">
-        &copy; 2023 Monster Hunter Wiki. Todos los derechos reservados.
+        &copy; 2025 Monster Hunter Wiki. Todos los derechos reservados.
       </p>
     </footer>
   </body>
