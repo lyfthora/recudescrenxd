@@ -220,7 +220,7 @@ header {
 /* secciones(aldea,mons,armas)*/
 .info-section {
   background-color: #000000;
-  padding: 2rem 5rem 1rem 5rem;
+  padding: 0rem 5rem 0rem 5rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
@@ -317,7 +317,7 @@ header {
 
 /*formulario */
 .form-section {
-  padding: 4rem 0;
+  padding: 0 0 4rem 0;
   background-color: #000000;
 }
 
@@ -391,7 +391,7 @@ header {
 /*consejos*/
 .lista-section {
   background-color: #000000;
-  padding: 4rem 0;
+  padding: 4rem 0 4rem 0;
 }
 
 .consejos-lista {
