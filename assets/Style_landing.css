@@ -426,6 +426,15 @@ footer {
   margin-bottom: 1.5rem;
 }
 
+.social-links img {
+  transition: transform 0.3s ease;
+  height: 32px; /* Para uniformidad */
+}
+
+.social-links img:hover {
+  transform: scale(1.1);
+}
+
 .social-links a {
   color: white;
   font-size: 1.25rem;
