@@ -12,10 +12,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/Style_landing.css" />
-    <script
-      src="https://kit.fontawesome.com/8d78b7d0d6.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
     <!--   header -->
@@ -24,7 +20,8 @@
         <img src="assets/img/logo.png" alt="Monster Hunter Wiki" width="150" />
       </div>
       <button class="menu-toggle" aria-label="Toggle menu">
-        <i class="fas fa-bars"></i>
+        ☰
+        <!-- Reemplazado el ícono de Font Awesome por un símbolo HTML -->
       </button>
       <nav class="navbar">
         <ul class="nav-links">
@@ -66,11 +63,7 @@
       <section class="info-section">
         <article class="card">
           <h3>Aldeas</h3>
-          <img
-            src="assets/img/mapamundi.webp"
-            alt="Aldea de Monster Hunter"
-            loading="lazy"
-          />
+          <img src="assets/img/mapamundi.webp" alt="Aldea de Monster Hunter" />
           <p>
             Descubre las diferentes aldeas y ciudades que pueblan el mundo de
             Monster Hunter.
@@ -80,11 +73,7 @@
 
         <article class="card">
           <h3>Monstruos</h3>
-          <img
-            src="assets/img/valtrasx.png"
-            alt="Rathalos de Monster Hunter"
-            loading="lazy"
-          />
+          <img src="assets/img/valtrasx.png" alt="Rathalos de Monster Hunter" />
           <p>
             Conoce a las criaturas que habitan este mundo y aprende a cazarlas.
           </p>
@@ -96,7 +85,6 @@
           <img
             src="assets/img/intro.jpg"
             alt="Espada grande de Monster Hunter"
-            loading="lazy"
           />
           <p>
             Domina las 14 armas diferentes y encuentra tu estilo de combate.
@@ -104,29 +92,6 @@
           <a href="#armas1" class="btn">Ver más</a>
         </article>
       </section>
-
-      <!-- <section class="map-section">
-        <h2>Mapa del Mundo</h2>
-        <div class="iframe-container">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=..."
-            allowfullscreen=""
-            loading="lazy"
-          ></iframe>
-        </div>
-      </section> -->
-
-      <!-- <section class="youtube-section">
-        <h2>Últimos Videos</h2>
-        <div class="iframe-container">
-          <iframe
-            src="https://www.youtube.com/embed/..."
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </section> -->
 
       <!-- tips-->
       <section class="lista-section">
@@ -201,7 +166,7 @@
     <!-- modal aldea -->
     <div id="moga" class="modal-aldea">
       <div class="modal-contenido">
-        <a href="#MHWiki" class="modal-cerrar">&times;</a>
+        <a href="#MHWiki" class="modal-cerrar">×</a>
         <h2>Aldea de Moga</h2>
         <img
           src="assets/img/Aldea_Moga.jpg"
@@ -216,14 +181,14 @@
           Ceadeus, que causa maremotos que afectan a la aldea.
         </p>
         <div class="modal-navegacion">
-          <a href="#pokke" class="modal-btn">Siguiente &rarr;</a>
+          <a href="#pokke" class="modal-btn">Siguiente →</a>
         </div>
       </div>
     </div>
 
     <div id="pokke" class="modal-aldea">
       <div class="modal-contenido">
-        <a href="#MHWiki" class="modal-cerrar">&times;</a>
+        <a href="#MHWiki" class="modal-cerrar">×</a>
         <h2>Aldea de Pokke</h2>
         <img
           src="assets/img/Aldea_Pokke.jpg"
@@ -238,7 +203,7 @@
           partida para explorar la Montaña Nevada.
         </p>
         <div class="modal-navegacion">
-          <a href="#moga" class="modal-btn">&larr; Anterior</a>
+          <a href="#moga" class="modal-btn">← Anterior</a>
         </div>
       </div>
     </div>
@@ -246,7 +211,7 @@
     <!-- modal mons -->
     <div id="monstruos1" class="modal-aldea">
       <div class="modal-contenido">
-        <a href="#MHWiki" class="modal-cerrar">&times;</a>
+        <a href="#MHWiki" class="modal-cerrar">×</a>
         <h2>Zohshia</h2>
         <img src="assets/img/zohshia.png" alt="Zohshia" class="modal-imagen" />
         <p>
@@ -255,14 +220,14 @@
           enfrentarlo.
         </p>
         <div class="modal-navegacion">
-          <a href="#monstruos2" class="modal-btn">Siguiente &rarr;</a>
+          <a href="#monstruos2" class="modal-btn">Siguiente →</a>
         </div>
       </div>
     </div>
 
     <div id="monstruos2" class="modal-aldea">
       <div class="modal-contenido">
-        <a href="#MHWiki" class="modal-cerrar">&times;</a>
+        <a href="#MHWiki" class="modal-cerrar">×</a>
         <h2>Fatalis</h2>
         <img src="assets/img/fatalis.png" alt="Fatalis" class="modal-imagen" />
         <p>
@@ -270,7 +235,7 @@
           Monster Hunter. Su poder y destrucción son legendarios.
         </p>
         <div class="modal-navegacion">
-          <a href="#monstruos1" class="modal-btn">&larr; Anterior</a>
+          <a href="#monstruos1" class="modal-btn">← Anterior</a>
         </div>
       </div>
     </div>
@@ -278,7 +243,7 @@
     <!-- modal armas -->
     <div id="armas1" class="modal-aldea">
       <div class="modal-contenido">
-        <a href="#MHWiki" class="modal-cerrar">&times;</a>
+        <a href="#MHWiki" class="modal-cerrar">×</a>
         <h2>Dual Blades</h2>
         <img
           src="assets/img/dualblades.png"
@@ -290,14 +255,14 @@
           prefieren la velocidad y los combos continuos.
         </p>
         <div class="modal-navegacion">
-          <a href="#armas2" class="modal-btn">Siguiente &rarr;</a>
+          <a href="#armas2" class="modal-btn">Siguiente →</a>
         </div>
       </div>
     </div>
 
     <div id="armas2" class="modal-aldea">
       <div class="modal-contenido">
-        <a href="#MHWiki" class="modal-cerrar">&times;</a>
+        <a href="#MHWiki" class="modal-cerrar">×</a>
         <h2>Great Sword</h2>
         <img
           src="assets/img/greatsword.png"
@@ -309,7 +274,7 @@
           golpe. Requiere precisión y paciencia para dominarla.
         </p>
         <div class="modal-navegacion">
-          <a href="#armas1" class="modal-btn">&larr; Anterior</a>
+          <a href="#armas1" class="modal-btn">← Anterior</a>
         </div>
       </div>
     </div>
@@ -317,10 +282,19 @@
     <!-- footer -->
     <footer>
       <div class="social-links">
-        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="#" aria-label="Facebook">
+          <img src="assets/img/logo_facebook.png" alt="Facebook" width="32" />
+        </a>
+        <a href="#" aria-label="Instagram">
+          <img src="assets/img/logo_insta.png" alt="Instagram" width="32" />
+        </a>
+        <a href="#" aria-label="YouTube">
+          <img src="assets/img/logo_youtube.png" alt="YouTube" width="32" />
+        </a>
+
+        <a href="#" aria-label="TikTok">
+          <img src="assets/img/logo_tiktok.png" alt="TikTok" width="32" />
+        </a>
       </div>
 
       <div class="footer-links">
