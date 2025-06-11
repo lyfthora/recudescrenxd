@@ -51,9 +51,9 @@ h6 {
   font-size: 1rem;
 }
 
-p {
+/* p {
   margin-bottom: 1.5rem;
-}
+} */
 
 a {
   color: white;
@@ -220,23 +220,26 @@ header {
 /* secciones(aldea,mons,armas)*/
 .info-section {
   background-color: #000000;
-  padding: 0rem 5rem 0rem 5rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  padding: 0 3rem 0rem 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card {
   background-color: #1e1e1e;
-  max-width: 900px;
+  width: 435px;
+  margin: 0rem 3.5rem;
   text-align: center;
-  padding-bottom: 25px;
-  padding-top: 20px;
+  padding: 1rem 1rem 1rem 1rem;
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
+.card p {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
 .card:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
@@ -528,11 +531,6 @@ footer {
 
   .hero p {
     font-size: 1.25rem;
-  }
-
-  .info-section {
-    grid-template-columns: 1fr;
-    padding: 2rem 1rem;
   }
 }
 
