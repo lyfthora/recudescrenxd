@@ -80,6 +80,8 @@ header {
   width: auto;
 }
 
+/* no me convence...
+
 .menu-toggle {
   background: none;
   border: none;
@@ -87,7 +89,7 @@ header {
   font-size: 1.5rem;
   cursor: pointer;
   display: none;
-}
+} */
 
 .navbar {
   margin-left: auto;
@@ -529,6 +531,18 @@ footer {
   .hero p {
     font-size: 1.25rem;
   }
+
+  .video {
+    height: 60vh;
+  }
+
+  .video h1 {
+    font-size: 2rem;
+  }
+
+  .video p {
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 375px) {
@@ -604,5 +618,32 @@ footer {
 
   .nav-links a:hover::after {
     width: 0;
+  }
+}
+@media (min-width: 375px) and (max-width: 768px) {
+  .info-section {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .card {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  .video h1 {
+    font-size: 2.2rem;
+  }
+
+  .video p {
+    font-size: 1.3rem;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .navbar.active {
+    display: block;
   }
 }
