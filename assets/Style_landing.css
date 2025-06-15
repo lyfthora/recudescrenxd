@@ -94,41 +94,14 @@ header {
 .navbar {
   margin-left: auto;
 }
-
-.nav-links {
-  display: flex;
-  gap: 1.5rem;
-  justify-content: flex-end;
-  list-style: none;
-  align-items: center;
-}
-
-.nav-links a {
+.navbar a {
   color: white;
   font-family: "IBM Plex Mono", monospace;
   font-size: 1rem;
   padding: 0.5rem 0;
   position: relative;
-}
-
-.nav-links a.active {
-  color: #ff9800;
-}
-
-.nav-links a::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: #ff9800;
-  transition: width 0.3s ease;
-}
-
-.nav-links a:hover::after,
-.nav-links a:focus::after {
-  width: 100%;
+  margin-right: 1.5rem;
+  text-decoration: none;
 }
 
 /* video */
@@ -195,7 +168,7 @@ header {
 /* introduccion */
 .section-intro {
   background-color: #000000;
-  padding: 4rem 0;
+  padding: 1rem 0 40px 0;
   text-align: center;
 }
 
@@ -295,7 +268,7 @@ header {
 
 .modal-imagen {
   width: 100%;
-  max-height: 400px;
+  height: 25rem;
   object-fit: contain;
   border-radius: 5px;
   margin-bottom: 1rem;
@@ -319,7 +292,7 @@ header {
 
 /*formulario */
 .form-section {
-  padding: 0 0 4rem 0;
+  padding: 0 0 2rem 0;
   background-color: #000000;
 }
 
@@ -393,7 +366,7 @@ header {
 /*consejos*/
 .lista-section {
   background-color: #000000;
-  padding: 4rem 0 4rem 0;
+  padding: 2rem 0 2rem 0;
 }
 
 .consejos-lista {
@@ -416,9 +389,11 @@ header {
 
 /*footer*/
 footer {
+  position: relative;
   background-color: #1e1e1e;
   padding: 3rem 0 1.5rem;
   text-align: center;
+  overflow: visible;
 }
 
 .social-links {
@@ -448,12 +423,32 @@ footer {
   transform: translateY(-3px);
 }
 
+.footer-map {
+  position: absolute;
+  top: 50%;
+  left: 2rem;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.footer-map iframe {
+  width: 300px;
+  height: 150px;
+  border-radius: 8px;
+  border: 0;
+  display: block;
+}
+
 .footer-links {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
   margin-bottom: 1.5rem;
   flex-wrap: wrap;
+}
+.social-links,
+.footer-links,
+.copyright {
+  width: 100%;
 }
 
 .footer-links a {
