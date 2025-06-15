@@ -21,13 +21,11 @@
       </div>
       <!-- <button class="menu-toggle" aria-label="Toggle menu">☰</button> -->
       <nav class="navbar">
-        <ul class="nav-links">
-          <li><a href="index.html" class="active">Inicio</a></li>
-          <li><a href="lugares.html">Lugares</a></li>
-          <li><a href="monstruos.html">Monstruos</a></li>
-          <li><a href="lore.html">Lore</a></li>
-          <li><a href="login.html">Login</a></li>
-        </ul>
+        <a href="index.html" class="active">Inicio</a>
+        <a href="lugares.html">Lugares</a>
+        <a href="monstruos.html">Monstruos</a>
+        <a href="lore.html">Lore</a>
+        <a href="login.html">Login</a>
       </nav>
     </header>
 
@@ -35,7 +33,10 @@
       <!-- video -->
       <section class="video">
         <video id="bgVideo" autoplay loop muted playsinline class="bg-video">
-          <source src="assets/media/Video.mp4" type="video/mp4" />
+          <source
+            src="assets/media/Monster Hunter Wilds - Official Reveal Trailer (video-converter.com).webm"
+            type="video/mp4"
+          />
           Tu navegador no soporta videos HTML5.
         </video>
         <div class="video-content">
@@ -65,7 +66,7 @@
             Descubre las diferentes aldeas y ciudades que pueblan el mundo de
             Monster Hunter.
           </p>
-          <a href="#moga" class="btn">Ver más</a>
+          <a href="#aldea" class="btn">Ver más</a>
         </article>
 
         <article class="card">
@@ -74,7 +75,7 @@
           <p>
             Conoce a las criaturas que habitan este mundo y aprende a cazarlas.
           </p>
-          <a href="#monstruos1" class="btn">Ver más</a>
+          <a href="#monstruos" class="btn">Ver más</a>
         </article>
 
         <article class="card">
@@ -86,7 +87,7 @@
           <p>
             Domina las 14 armas diferentes y encuentra tu estilo de combate.
           </p>
-          <a href="#armas1" class="btn">Ver más</a>
+          <a href="#armas" class="btn">Ver más</a>
         </article>
       </section>
 
@@ -161,7 +162,31 @@
     </main>
 
     <!-- modal aldea -->
-    <div id="moga" class="modal-aldea">
+
+    <div id="aldea" class="modal-aldea">
+      <div class="modal-contenido">
+        <a href="#MHWiki" class="modal-cerrar">×</a>
+        <iframe
+          src="https://www.youtube.com/embed/5C21ln9supc"
+          title="Monster Hunter: World - Aldea"
+          class="modal-imagen"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+        <p>
+          En el universo de Monster Hunter, las aldeas son puntos de partida
+          cruciales para los cazadores. Cada aldea tiene su propio ambiente,
+          cultura y desafíos únicos. Desde la Aldea de Moga hasta la Aldea de
+          Pokke, cada una ofrece una experiencia distinta y es esencial para
+          prepararse antes de salir a cazar.
+        </p>
+        <div class="modal-navegacion">
+          <a href="#aldea1" class="modal-btn">Siguiente →</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="aldea1" class="modal-aldea">
       <div class="modal-contenido">
         <a href="#MHWiki" class="modal-cerrar">×</a>
         <h2>Aldea de Moga</h2>
@@ -178,12 +203,13 @@
           Ceadeus, que causa maremotos que afectan a la aldea.
         </p>
         <div class="modal-navegacion">
-          <a href="#pokke" class="modal-btn">Siguiente →</a>
+          <a href="#aldea" class="modal-btn">← Anterior</a>
+          <a href="#aldea2" class="modal-btn">Siguiente →</a>
         </div>
       </div>
     </div>
 
-    <div id="pokke" class="modal-aldea">
+    <div id="aldea2" class="modal-aldea">
       <div class="modal-contenido">
         <a href="#MHWiki" class="modal-cerrar">×</a>
         <h2>Aldea de Pokke</h2>
@@ -200,12 +226,36 @@
           partida para explorar la Montaña Nevada.
         </p>
         <div class="modal-navegacion">
-          <a href="#moga" class="modal-btn">← Anterior</a>
+          <a href="#aldea1" class="modal-btn">← Anterior</a>
         </div>
       </div>
     </div>
 
     <!-- modal mons -->
+
+    <div id="monstruos" class="modal-aldea">
+      <div class="modal-contenido">
+        <a href="#MHWiki" class="modal-cerrar">×</a>
+        <iframe
+          src="https://www.youtube.com/embed/iK2UT801wbo"
+          title="Monster Hunter: World - Monstruos"
+          class="modal-imagen"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+
+        <p>
+          En el universo de Monster Hunter, los cazadores se enfrentan a una
+          variedad de monstruos, desde los más comunes hasta los más
+          legendarios. Cada uno tiene sus propias características y desafíos, lo
+          que hace que la caza sea una experiencia única.
+        </p>
+        <div class="modal-navegacion">
+          <a href="#monstruos1" class="modal-btn">Siguiente →</a>
+        </div>
+      </div>
+    </div>
+
     <div id="monstruos1" class="modal-aldea">
       <div class="modal-contenido">
         <a href="#MHWiki" class="modal-cerrar">×</a>
@@ -217,6 +267,7 @@
           enfrentarlo.
         </p>
         <div class="modal-navegacion">
+          <a href="#monstruos" class="modal-btn">← Anterior</a>
           <a href="#monstruos2" class="modal-btn">Siguiente →</a>
         </div>
       </div>
@@ -238,6 +289,29 @@
     </div>
 
     <!-- modal armas -->
+    <div id="armas" class="modal-aldea">
+      <div class="modal-contenido">
+        <a href="#MHWiki" class="modal-cerrar">×</a>
+        <iframe
+          src="https://www.youtube.com/embed/ZHYimvX8gYs"
+          title="Monster Hunter: World - Todas las armas"
+          class="modal-imagen"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+        <p>
+          En Monster Hunter, los cazadores pueden elegir entre 14 tipos de
+          armas, cada una con su propio estilo de combate y mecánicas únicas.
+          Desde espadas grandes hasta arcos, cada arma ofrece una experiencia
+          diferente en la caza de monstruos.
+        </p>
+
+        <div class="modal-navegacion">
+          <a href="#armas1" class="modal-btn">Siguiente →</a>
+        </div>
+      </div>
+    </div>
+
     <div id="armas1" class="modal-aldea">
       <div class="modal-contenido">
         <a href="#MHWiki" class="modal-cerrar">×</a>
@@ -252,6 +326,7 @@
           prefieren la velocidad y los combos continuos.
         </p>
         <div class="modal-navegacion">
+          <a href="#armas" class="modal-btn">← Anterior</a>
           <a href="#armas2" class="modal-btn">Siguiente →</a>
         </div>
       </div>
@@ -278,7 +353,15 @@
 
     <!-- footer -->
     <footer>
-      <div class="social-links">
+      <div class="footer-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.9537353159045!3d-37.8162797420217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f1f8e3fb%3A0x5045675218ce6e0!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1ses!2sar!4v1620000000000!5m2!1ses!2sar"
+          style="border: 0; border-radius: 8px"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+      <nav class="social-links">
         <a href="#" aria-label="Facebook">
           <img src="assets/img/logo_facebook.png" alt="Facebook" width="32" />
         </a>
@@ -292,7 +375,7 @@
         <a href="#" aria-label="TikTok">
           <img src="assets/img/logo_tiktok.png" alt="TikTok" width="32" />
         </a>
-      </div>
+      </nav>
 
       <div class="footer-links">
         <a href="privacidad.html">Política de Privacidad</a>
