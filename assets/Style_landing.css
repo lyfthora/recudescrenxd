@@ -497,28 +497,25 @@ footer {
 
   .navbar {
     width: 100%;
+  }
+
+  .active,
+  .lugares,
+  .monstruos,
+  .lore {
     display: none;
   }
-
-  .navbar.active {
-    display: block;
+  .login {
+    display: flex;
+    justify-content: flex-end;
   }
 
-  .nav-links {
-    flex-direction: column;
-    gap: 0;
-    padding-top: 1rem;
+  .btn {
+    display: none;
   }
-
-  .nav-links li {
-    border-bottom: 1px solid #333;
+  .footer-map {
+    display: none;
   }
-
-  .nav-links a {
-    display: block;
-    padding: 1rem;
-  }
-
   .hero h1 {
     font-size: 2.5rem;
   }
@@ -632,10 +629,6 @@ footer {
 
   .video p {
     font-size: 1.3rem;
-  }
-
-  .navbar {
-    display: none;
   }
 
   .navbar.active {
